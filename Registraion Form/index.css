@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url('Animated\ Shape.svg');
+    background-attachment: fixed;
+}
+
+.registration-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    padding-right:35px ;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.registration-form:hover{
+    animation:color 10s;
+    transition: 1s;   
+}
+
+@keyframes color{
+    0%{
+        box-shadow: red  0px 0px 50px 5px;
+    }
+    20%{
+        box-shadow: pink  0px 0px 50px 5px;
+    }
+    50%{
+        box-shadow: violet  0px 0px 50px 5px;
+    }
+    70%{
+        box-shadow: lightgreen  0px 0px 50px 5px;
+    }
+    100%{
+        box-shadow:yellow  0px 0px 50px 5px;
+    }
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
